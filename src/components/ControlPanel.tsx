@@ -333,9 +333,13 @@ export default function ControlPanel(props: {
           onChange={(e) => set({ baseLatencyMs: Number(e.target.value) })}
         />
 
-        <div className="small" style={{ marginTop: 10 }}>
-          Tip: Increase payload, disable cache, or reduce DB QPS to see bottlenecks shift.
+        <div className="tipRow">
+          <span className="tipIcon" aria-hidden>💡</span>
+          <div className="tipText small">
+            Increase payload, disable cache, or reduce DB QPS to see bottlenecks shift.
+          </div>
         </div>
+
       </div>
     </div>
   );
