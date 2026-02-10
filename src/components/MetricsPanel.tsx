@@ -1,5 +1,6 @@
 import type { SimConfig, SimResult } from "../types/system";
 import RecommendedActions from "./RecommendedActions";
+import { COST_MODEL_NOTE } from "../data/notes";
 
 function pct(n: number) {
   return `${Math.round(n * 100)}%`;
@@ -100,8 +101,18 @@ export default function MetricsPanel(props: {
       </div>
 
       <div className="section">
-        <div className="h2">Cost (monthly estimate)</div>
-        <div className="p">Simple cost model (change constants in simulator.ts).</div>
+        <div className="labelWithInfo">
+          <div className="h2">Cost (monthly estimate)</div>
+          <button
+            className="miniInfoBtn"
+            title={COST_MODEL_NOTE}
+            aria-label="Cost model note"
+          >
+            ⓘ
+          </button>
+        </div>
+
+        {/* <div className="p">Simple cost model (change constants in simulator.ts).</div> */}
 
         <table className="table">
           <tbody>
@@ -119,7 +130,9 @@ export default function MetricsPanel(props: {
         </table>
 
         <div className="small" style={{ marginTop: 10 }}>
-          Want accuracy? Plug in AWS/GCP pricing + instance types + storage and we can make this real.
+          <b>Cost Model Note: </b>
+          This simulator uses a simplified cost model to highlight relative trade-offs (scale vs performance vs cost).<br />
+          If we want cloud-accurate estimates, we can plug in AWS/GCP pricing tables and instance/DB/cache SKUs as a future enhancement.
         </div>
       </div>
 
