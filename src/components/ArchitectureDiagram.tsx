@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { SimConfig, SimResult, SystemStatus } from "../types/system";
-import type { ComponentId } from "../data/ComponentInfo";
+import type { ComponentId } from "../data/componentInfo";
 
 const FLOW_VIZ_ENABLED = false;
 

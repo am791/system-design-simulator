@@ -1,4 +1,4 @@
-import type { ComponentId } from "../data/ComponentInfo";
+import type { ComponentId } from "../data/componentInfo";
 
 function InfoIcon(props: { size?: number }) {
   const size = props.size ?? 16;

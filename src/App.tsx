@@ -6,7 +6,7 @@ import ComponentInfoDrawer from "./components/ComponentInfoDrawer";
 import { PRESETS, type PresetKey } from "./data/presets";
 import { simulate } from "./utils/simulator";
 import type { SimConfig } from "./types/system";
-import type { ComponentId } from "./data/ComponentInfo";
+import type { ComponentId } from "./data/componentInfo";
 
 export default function App() {
   const [presetKey, setPresetKey] = useState<PresetKey>("baseline");

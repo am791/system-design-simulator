@@ -1,7 +1,7 @@
 import type { SimConfig } from "../types/system";
 import type { PresetKey } from "../data/presets";
 import SectionHeader from "./SectionHeader";
-import type { ComponentId } from "../data/ComponentInfo";
+import type { ComponentId } from "../data/componentInfo";
 
 type Preset = {
   name: string;

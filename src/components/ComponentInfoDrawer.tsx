@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from "react";
-import { COMPONENT_INFO, type ComponentId } from "../data/ComponentInfo";
+import { COMPONENT_INFO, type ComponentId } from "../data/componentInfo";
 import type { SimConfig, SimResult } from "../types/system";
 
 function InfoIcon(props: { size?: number }) {
